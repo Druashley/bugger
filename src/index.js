@@ -1,8 +1,9 @@
 //our index js file
-import {frontEndButtonClick} from "./buttons.js"
+import {frontEndButtonClick, backEndButtonClick} from "./buttons.js"
 
 function startUp () {
-    frontEndButtonClick()
+    frontEndButtonClick();
+    backEndButtonClick();
 }
 
 

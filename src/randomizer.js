@@ -1,7 +1,14 @@
 //the random number picker code will go here
 
 const randomNumberSet = () => {
-    Math.floor(Math.random() * 100);
+    // random number between 0 - 99
+    return Math.floor(Math.random() * 100);
 }
 
-export { randomNumberSet }
+const randomThreeNumberSet = () => {
+    // random number between 0 - 2
+    return Math.floor(Math.random() * 3);
+}
+
+
+export { randomNumberSet, randomThreeNumberSet }

@@ -1,14 +1,32 @@
 // I will put the functionality of the buttons here
 
-import {frontEndButton, backEndButton} from "./domelements.js"
-import { randomNumberSet } from "./randomizer.js"
+import {frontEndButton, backEndButton, answer} from "./domelements.js"
+import { randomNumberSet, randomThreeNumberSet } from "./randomizer.js"
+import { setFrontEndPerson } from "./frontEndPickerLogic.js"
+import { setBackEndPerson } from "./backEndPicker.js"
+import { frontEndTextSet } from "./frontEndTextSetter.js"
+
 
 const frontEndButtonClick = () => {
     frontEndButton.addEventListener("click", setFrontEnd)
 }
 
-function setFrontEnd () {
-    console.log(randomNumberSet);
+const backEndButtonClick = () => {
+    backEndButton.addEventListener("click", setBackEnd)
 }
 
-export {frontEndButtonClick}
+
+
+
+function setFrontEnd () {
+    setFrontEndPerson(randomNumberSet());
+    frontEndTextSet(answer.textContent, randomThreeNumberSet())
+}
+
+
+function setBackEnd () {
+
+    setBackEndPerson(randomNumberSet());
+}
+
+export {frontEndButtonClick, backEndButtonClick}

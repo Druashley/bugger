@@ -3,29 +3,30 @@ import { answer } from "./domelements.js"
 
 
 
-function setFrontEndPerson (number) {
+function setBackEndPerson (number) {
     let person = "";
     if (number == 1){
         person = "RW";
         answer.innerHTML = person;
     } else if (number < 4){
-        person = "JW";
-        answer.innerHTML = person;
-    } else if (number < 7){
-        person = "DH";
-        answer.innerHTML = person;
-    } else if (number < 21){
         person = "DAME";
         answer.innerHTML = person;
-    } else if (number < 47) {
+    } else if (number < 13){
         person = "RD";
         answer.innerHTML = person;
-    } else {
+    } else if (number < 17){
         person = "MP";
+        answer.innerHTML = person;
+    } else if (number < 36) {
+        person = "DH";
+        answer.innerHTML = person;
+    } else {
+        person = "JW";
         answer.innerHTML = person;
     }
 }
 
 
 
-export { setFrontEndPerson }
+
+export { setBackEndPerson }
