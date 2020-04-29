@@ -3,18 +3,18 @@ import { answer } from "./domelements.js"
 
 
 
-function setFrontEndPerson (number) {
+function setFrontEndPerson(number) {
     let person = "";
-    if (number == 1){
+    if (number == 1) {
         person = "RW";
         answer.innerHTML = person;
-    } else if (number < 4){
+    } else if (number < 4) {
         person = "JW";
         answer.innerHTML = person;
-    } else if (number < 7){
+    } else if (number < 7) {
         person = "DH";
         answer.innerHTML = person;
-    } else if (number < 21){
+    } else if (number < 21) {
         person = "DAME";
         answer.innerHTML = person;
     } else if (number < 47) {
