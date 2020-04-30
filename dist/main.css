@@ -6,10 +6,6 @@
     box-sizing: border-box;
 }
 
-
-
-
-
 .top-header {
     border-bottom: black 2px solid;
     text-align: center;
@@ -19,9 +15,9 @@
 
 .main-container{
     display: grid;
-    border: indigo 1px solid;
+    border: black 1px solid;
     grid-template-columns: 150px 150px;
-    grid-template-rows: auto auto;
+    grid-template-rows: 50% 50%;
     padding: 20px;
     height: 450px;
     width: 450px;
@@ -63,9 +59,9 @@
 }
 
 .answer {
-    height: 45%;
-    border: black solid 1px;
+    height: 75%;
+    border: 1px solid black;
     border-radius: 50%;
     text-align: center;
-    padding-top: 22%;
+    padding-top: 25%;
 }

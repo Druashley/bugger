@@ -4,9 +4,9 @@
 const frontEndButton = document.querySelector(".front-end");
 const backEndButton = document.querySelector(".back-end");
 
-const answer = document.querySelector(".answer");
+const answer = document.querySelector(".answer-location");
 
-const answerText = document.querySelector(".text-container")
+const answerText = document.querySelector(".text")
 
 
 
